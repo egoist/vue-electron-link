@@ -11,6 +11,8 @@ The hyperlink that opens link in **default browser** or **file explorer** or **m
 yarn add vue-electron-link
 ```
 
+**Note: use this in Electron renderer process only.**
+
 ## Usage
 
 ```vue
