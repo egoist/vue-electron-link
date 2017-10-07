@@ -1,6 +1,6 @@
 {
   "name": "vue-electron-link",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Open link in default browser from your Electron app.",
   "repository": {
     "url": "egoist/vue-electron-link",
