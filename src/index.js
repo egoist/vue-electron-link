@@ -18,7 +18,7 @@ export default {
 
   render(h, ctx) {
     const { href } = ctx.data.attrs
-    const { isFile, moveToTrash, beep } = ctx.props
+    const { isFile, moveToTrash } = ctx.props
 
     const attrs = {
       ...ctx.data,
