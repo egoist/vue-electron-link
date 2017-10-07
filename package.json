@@ -1,0 +1,32 @@
+{
+  "name": "vue-electron-link",
+  "version": "0.0.0",
+  "description": "Open link in default browser from your Electron app.",
+  "repository": {
+    "url": "egoist/vue-electron-link",
+    "type": "git"
+  },
+  "main": "dist/electron-link.common.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "npm run lint && echo 'no tests!'",
+    "lint": "xo",
+    "prepublish": "npm run build",
+    "build": "bili --filename electron-link --buble.target.chrome 52",
+    "example": "electron example/main.js"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "bili": "^0.18.2",
+    "electron": "^1.7.8",
+    "eslint-config-rem": "^3.0.0",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "extends": "rem"
+  }
+}

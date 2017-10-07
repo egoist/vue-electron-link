@@ -1,0 +1,42 @@
+<div id="app">
+  <electron-link
+    class="link"
+    href="https://google.com">
+    open link in default browser
+  </electron-link>
+  <br>
+  <electron-link
+    href="./example/main.js"
+    :is-file="true">
+    open item in folder
+  </electron-link>
+  <br>
+  <electron-link
+    href="./example/foo.txt"
+    :move-to-trash="removed">
+    move to trash
+  </electron-link>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script>
+const ElectronLink = require('../dist/electron-link.common.js')
+
+new Vue({
+  el: '#app',
+  components: {
+    ElectronLink
+  },
+  methods: {
+    removed(res) {
+      alert(`removed: ${res}`)
+    }
+  }
+})
+</script>
+
+<style>
+.link {
+  color: red;
+}
+</style>
